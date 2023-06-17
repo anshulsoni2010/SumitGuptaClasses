@@ -1,75 +1,63 @@
-/*=============== SHOW MENU ===============*/
-const showMenu = (toggleId, navId) => {
-    const toggle = document.getElementById(toggleId),
-        nav = document.getElementById(navId)
+'use strict';
 
-    toggle.addEventListener('click', () => {
-        // Add show-menu class to nav menu
-        nav.classList.toggle('show-menu')
 
-        // Add show-icon to show and hide the menu icon
-        toggle.classList.toggle('show-icon')
-    })
-}
 
-showMenu('nav-toggle', 'nav-menu')
+/**
+ * add event on element
+ */
 
-/*=============== SHOW DROPDOWN MENU ===============*/
-const dropdownItems = document.querySelectorAll('.dropdown__item')
-
-// 1. Select each dropdown item
-dropdownItems.forEach((item) => {
-    const dropdownButton = item.querySelector('.dropdown__button')
-
-    // 2. Select each button click
-    dropdownButton.addEventListener('click', () => {
-        // 7. Select the current show-dropdown class
-        const showDropdown = document.querySelector('.show-dropdown')
-
-        // 5. Call the toggleItem function
-        toggleItem(item)
-
-        // 8. Remove the show-dropdown class from other items
-        if (showDropdown && showDropdown != item) {
-            toggleItem(showDropdown)
+const addEventOnElem = function (elem, type, callback) {
+    if (elem.length > 1) {
+        for (let i = 0; i < elem.length; i++) {
+            elem[i].addEventListener(type, callback);
         }
-    })
-})
-
-// 3. Create a function to display the dropdown
-const toggleItem = (item) => {
-    // 3.1. Select each dropdown content
-    const dropdownContainer = item.querySelector('.dropdown__container')
-
-    // 6. If the same item contains the show-dropdown class, remove
-    if (item.classList.contains('show-dropdown')) {
-        dropdownContainer.removeAttribute('style')
-        item.classList.remove('show-dropdown')
     } else {
-        // 4. Add the maximum height to the dropdown content and add the show-dropdown class
-        dropdownContainer.style.height = dropdownContainer.scrollHeight + 'px'
-        item.classList.add('show-dropdown')
+        elem.addEventListener(type, callback);
     }
 }
 
-/*=============== DELETE DROPDOWN STYLES ===============*/
-const mediaQuery = matchMedia('(min-width: 1118px)'),
-    dropdownContainer = document.querySelectorAll('.dropdown__container')
 
-// Function to remove dropdown styles in mobile mode when browser resizes
-const removeStyle = () => {
-    // Validate if the media query reaches 1118px
-    if (mediaQuery.matches) {
-        // Remove the dropdown container height style
-        dropdownContainer.forEach((e) => {
-            e.removeAttribute('style')
-        })
 
-        // Remove the show-dropdown class from dropdown item
-        dropdownItems.forEach((e) => {
-            e.classList.remove('show-dropdown')
-        })
+/**
+ * navbar toggle
+ */
+
+const navbar = document.querySelector("[data-navbar]");
+const navTogglers = document.querySelectorAll("[data-nav-toggler]");
+const navLinks = document.querySelectorAll("[data-nav-link]");
+const overlay = document.querySelector("[data-overlay]");
+
+const toggleNavbar = function () {
+    navbar.classList.toggle("active");
+    overlay.classList.toggle("active");
+}
+
+addEventOnElem(navTogglers, "click", toggleNavbar);
+
+const closeNavbar = function () {
+    navbar.classList.remove("active");
+    overlay.classList.remove("active");
+}
+
+addEventOnElem(navLinks, "click", closeNavbar);
+
+
+
+/**
+ * header active when scroll down to 100px
+ */
+
+const header = document.querySelector("[data-header]");
+const backTopBtn = document.querySelector("[data-back-top-btn]");
+
+const activeElem = function () {
+    if (window.scrollY > 100) {
+        header.classList.add("active");
+        backTopBtn.classList.add("active");
+    } else {
+        header.classList.remove("active");
+        backTopBtn.classList.remove("active");
     }
 }
 
-addEventListener('resize', removeStyle)
+addEventOnElem(window, "scroll", activeElem);
