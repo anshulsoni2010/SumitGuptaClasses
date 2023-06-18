@@ -1091,10 +1091,14 @@ body {
 \*-----------------------------------*/
 @media (max-width: 990px) {
     .about-shape-2{
-        height: 160px !important;
-        width: 270px !important;
-        margin-bottom: 7%
+        height: 40% !important;
+        width: 80% !important;
+margin: 14% auto;        
     }
+}
+
+@media (max-width: 1200) {
+
 }
 
 /**
