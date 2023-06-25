@@ -5015,6 +5015,9 @@ button {
   }
 }
 
+.link-active{
+  color: #1ab79d !important;
+}
 .achievement-section {
   background: url(../../assets/images/shape-img/shade.png) no-repeat;
   background-position: center;
