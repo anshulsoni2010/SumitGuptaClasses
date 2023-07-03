@@ -202,6 +202,18 @@ footer.style-2 .footer-top .footer-item.twitter-post .footer-inner .footer-conte
   color: #fff;
 }
 
+.footer-link{
+  color: #bababa !important;
+}
+
+.footer-link:hover{
+  color: #1ab79d !important; 
+}
+
+.footer-brand-text{
+  color: #4f4f4f !important;
+font-weight: bold;
+}
 .news-letter .section-wrapper .news-form form .nf-list input[type=email], .widget.widget-search, .widget, .blog-single .section-wrapper .post-item .post-inner .post-content, .comment-respond, .comments, .course-side-cetagory, .course-side-detail .csd-content, .authors, .shop-cart .section-wrapper .cart-bottom .shiping-box .cart-overview ul li, .shop-cart .section-wrapper .cart-bottom .shiping-box .calculate-shiping .outline-select, .shop-cart .section-wrapper .cart-bottom .cart-checkout-box .cart-checkout input, .shop-single .review, .shop-single .product-details .post-content form .select-product, .shop-single .product-details, .shop-single .sidebar-widget .widget-search form input, .shop-page .shop-product-wrap .product-item, .shop-page .shop-product-wrap .product-list-item, .shop-page .sidebar-widget .widget-search form input, .skill-section .section-header .lab-btn, .register-section .section-wrapper .register-form .lab-btn, .register-section .section-wrapper, .clients-section.style-2 .section-wrapper .clients .client-list .client-content, .feature-section.style-3 .section-wrapper .feature-register form .lab-btn, .newsletters-section.style-2 .newsletter-area .section-wrapper .newsletter-form button, .date li, .workshop-join .workshop-join-form, .event-section.style-2 .section-wrapper .event-navi-item, .instructor-single-section .instructor-wrapper .instructor-single-bottom, .instructor-single-section .instructor-wrapper .instructor-single-top, .instructor-section.style-3 .section-wrapper .instructor-bottom .instructor-slider .instructor-navi, .instructor-section.style-3 .section-wrapper .instructor-bottom, .instructor-section.style-2 .section-wrapper .instructor-content .lab-btn, .offer-section .section-wrapper, .contact-info-section .section-wrapper .cinfo-item .cinfo-inner .cinfo-thumb, .course-video .course-video-content .accordion-item .accordion-collapse .video-item-list li:nth-child(even), .course-section.style-3 .section-header, .banner-section.style-7 .section-wrapper .banner-bottom, .banner-section.style-5 .section-wrapper .banner-content .lab-btn:hover, .banner-section.style-4 .banner-content ul li, .banner-section.style-4 .banner-content form input, .banner-section.style-4 .banner-content form select, .menu-search-form form input, .header-wrapper .menu-area .login, .header-section.style-6 .header-bottom .header-wrapper, .header-section.style-4 .menu-item-has-children > a::after, .header-section.style-4 .menu-item-has-children > a::before, .header-section.style-3 .header-bottom, .header-section.style-3 .header-top .header-top-area .header-top-contact a.lab-btn, .header-section.style-2 .logo-search-acte .header-search form, .feature-item .feature-inner, .client-item .client-inner, .event-item.style-2, .contact-item, .skill-item .skill-inner, .achieve-item .achieve-inner, .post-item .post-inner, .stu-feed-item .stu-feed-inner, .instructor-item, .course-item.style-5 .course-inner, .course-item.style-4 .course-inner, .course-item.style-3 .course-inner .course-content .lab-btn, .course-item.style-3 .course-inner .course-thumb .course-info li span, .course-item .course-inner, .category-item .category-inner, .account-wrapper, .video-button::before, .video-button::after, .video-button, .clients-slider-nav {
   background-color: #fff;
 }
@@ -226,7 +238,7 @@ footer.style-2 .footer-bottom .section-wrapper .footer-bottom-list a:hover, foot
   background: #f16126;
 }
 
-.news-letter .section-wrapper .news-form form .nf-list input[type=submit], .footer-top .footer-item .footer-inner .footer-content .title h4::after, .course-side-detail .csd-content .course-enroll .lab-btn, .skill-section::before, .achieve-part .col:last-child .achieve-item .achieve-inner .achieve-content .lab-btn, .achievement-section.style-3 .counter-part .col:nth-child(2) .count-item .count-inner .count-icon i, .instructor-section.style-2 .section-wrapper .count-item:nth-child(3n+2) .count-inner .count-icon i, .about-section.style-4 .about-item .counter-part .count-item:nth-child(3n+2) .count-inner .count-icon i, .course-video .course-video-content .accordion-item .accordion-header button, .pageheader-section.style-2 .pageheader-content .course-category .course-cate, .banner-section .cbs-content-list ul li.shape-1 a::after, .post-item.qute-post .post-inner .post-thumb, .course-navi:hover, .course-navi.active {
+.news-letter .section-wrapper .news-form form .nf-list input[type=submit], .footer-top .footer-item .footer-inner .footer-content .title h4::after, .course-side-detail .csd-content .course-enroll .lab-btn, .skill-section::before, .achieve-part .col:last-child .achieve-item .achieve-inner .achieve-content .lab-btn, .achievement-2-section.style-3 .counter-part .col:nth-child(2) .count-item .count-inner .count-icon i, .instructor-section.style-2 .section-wrapper .count-item:nth-child(3n+2) .count-inner .count-icon i, .about-section.style-4 .about-item .counter-part .count-item:nth-child(3n+2) .count-inner .count-icon i, .course-video .course-video-content .accordion-item .accordion-header button, .pageheader-section.style-2 .pageheader-content .course-category .course-cate, .banner-section .cbs-content-list ul li.shape-1 a::after, .post-item.qute-post .post-inner .post-thumb, .course-navi:hover, .course-navi.active {
   background: #26c976;
 }
 
@@ -388,11 +400,11 @@ footer.style-2 .footer-bottom .section-wrapper .footer-bottom-list a, .date li, 
   padding: 30px;
 }
 
-.comments .comment-list .comment .comment-list .comment:last-child, .achievement-section.style-3 .counter-part .count-item .count-inner, .event-section .section-wrapper .event-right .event-item:last-child .event-inner .event-content, .instructor-section.style-2 .section-wrapper .count-item:last-child .count-inner {
+.comments .comment-list .comment .comment-list .comment:last-child, .achievement-2-section.style-3 .counter-part .count-item .count-inner, .event-section .section-wrapper .event-right .event-item:last-child .event-inner .event-content, .instructor-section.style-2 .section-wrapper .count-item:last-child .count-inner {
   padding-bottom: 0;
 }
 
-.achievement-section.style-3 .counter-part .count-item .count-inner {
+.achievement-2-section.style-3 .counter-part .count-item .count-inner {
   padding-top: 0;
 }
 
@@ -464,11 +476,11 @@ footer.style-2 .footer-top .footer-item.twitter-post .footer-inner .footer-conte
   background: #e4405f;
 }
 
-.achievement-section.style-3 .counter-part .col:nth-child(4) .count-item .count-inner .count-icon::after, .achievement-section.style-3 .counter-part .col:nth-child(4) .count-item .count-inner .count-icon::before, .achievement-section.style-3 .counter-part .col:nth-child(4) .count-item .count-inner .count-icon i, .social-icons li a.behance {
+.achievement-2-section.style-3 .counter-part .col:nth-child(4) .count-item .count-inner .count-icon::after, .achievement-2-section.style-3 .counter-part .col:nth-child(4) .count-item .count-inner .count-icon::before, .achievement-2-section.style-3 .counter-part .col:nth-child(4) .count-item .count-inner .count-icon i, .social-icons li a.behance {
   background: #1769ff;
 }
 
-.achievement-section.style-3 .counter-part .col:nth-child(3) .count-item .count-inner .count-icon::after, .achievement-section.style-3 .counter-part .col:nth-child(3) .count-item .count-inner .count-icon::before, .achievement-section.style-3 .counter-part .col:nth-child(3) .count-item .count-inner .count-icon i, .social-icons li a.dribbble {
+.achievement-2-section.style-3 .counter-part .col:nth-child(3) .count-item .count-inner .count-icon::after, .achievement-2-section.style-3 .counter-part .col:nth-child(3) .count-item .count-inner .count-icon::before, .achievement-2-section.style-3 .counter-part .col:nth-child(3) .count-item .count-inner .count-icon i, .social-icons li a.dribbble {
   background: #ea4c89;
 }
 
@@ -5018,63 +5030,63 @@ button {
 .link-active{
   color: #1ab79d !important;
 }
-.achievement-section {
+.achievement-2-section {
   background: url(../../assets/images/shape-img/shade.png) no-repeat;
   background-position: center;
 }
-.achievement-section .section-header {
+.achievement-2-section .section-header {
   margin-bottom: 30px;
 }
 @media (max-width: 991px) {
-  .achievement-section .section-wrapper .counter-part {
+  .achievement-2-section .section-wrapper .counter-part {
     margin-bottom: 50px !important;
   }
 }
 @media (min-width: 992px) {
-  .achievement-section.style-2 .section-header {
+  .achievement-2-section.style-2 .section-header {
     margin-bottom: 40px;
   }
 }
 @media (max-width: 991px) {
-  .achievement-section.style-2 .section-wrapper .counter-part {
+  .achievement-2-section.style-2 .section-wrapper .counter-part {
     margin-bottom: 0px;
   }
 }
-.achievement-section.style-2 .section-wrapper .count-item .count-inner {
+.achievement-2-section.style-2 .section-wrapper .count-item .count-inner {
   padding: 0 30px;
 }
-.achievement-section.style-3 {
+.achievement-2-section.style-3 {
   background: #f9f9f9;
 }
 @media (min-width: 992px) {
-  .achievement-section.style-3 {
+  .achievement-2-section.style-3 {
     background: url(../../assets/images/shape-img/05.png) no-repeat;
     background-size: 100% 100%;
     background-position: center;
   }
 }
-.achievement-section.style-3 .counter-part {
+.achievement-2-section.style-3 .counter-part {
   margin-bottom: 0;
 }
-.achievement-section.style-3 .counter-part .col:nth-child(2) .count-item .count-inner .count-icon::before {
+.achievement-2-section.style-3 .counter-part .col:nth-child(2) .count-item .count-inner .count-icon::before {
   background: rgba(38, 201, 118, 0.1);
 }
-.achievement-section.style-3 .counter-part .col:nth-child(2) .count-item .count-inner .count-icon::after {
+.achievement-2-section.style-3 .counter-part .col:nth-child(2) .count-item .count-inner .count-icon::after {
   background: rgba(38, 201, 118, 0.2);
 }
-.achievement-section.style-3 .counter-part .col:nth-child(3) .count-item .count-inner .count-icon::before {
+.achievement-2-section.style-3 .counter-part .col:nth-child(3) .count-item .count-inner .count-icon::before {
   opacity: 0.1;
 }
-.achievement-section.style-3 .counter-part .col:nth-child(3) .count-item .count-inner .count-icon::after {
+.achievement-2-section.style-3 .counter-part .col:nth-child(3) .count-item .count-inner .count-icon::after {
   opacity: 0.2;
 }
-.achievement-section.style-3 .counter-part .col:nth-child(4) .count-item .count-inner .count-icon::before {
+.achievement-2-section.style-3 .counter-part .col:nth-child(4) .count-item .count-inner .count-icon::before {
   opacity: 0.1;
 }
-.achievement-section.style-3 .counter-part .col:nth-child(4) .count-item .count-inner .count-icon::after {
+.achievement-2-section.style-3 .counter-part .col:nth-child(4) .count-item .count-inner .count-icon::after {
   opacity: 0.2;
 }
-.achievement-section.style-3 .counter-part .count-item .count-inner {
+.achievement-2-section.style-3 .counter-part .count-item .count-inner {
   margin-bottom: -4px;
 }
 
@@ -6467,195 +6479,7 @@ button {
   font-size: 14px;
 }
 
-/* @@@@@@@@@@@@@  Footer Section Start Here  @@@@@@@@@@@@@@ */
-footer.style-2 .footer-top .footer-item .footer-inner .footer-content .title {
-  margin-top: -8px;
-}
-@media (min-width: 576px) {
-  footer.style-2 .footer-top .footer-item .footer-inner .footer-content .title {
-    margin-bottom: 15px;
-  }
-}
-footer.style-2 .footer-top .footer-item .footer-inner .footer-content .content ul li {
-  padding: 3px 0;
-}
-footer.style-2 .footer-top .footer-item.our-address .footer-inner .footer-content .content p {
-  font-size: 1rem;
-}
-footer.style-2 .footer-top .footer-item.our-address .footer-inner .footer-content .content ul.office-address li {
-  padding: 2px 0;
-  font-weight: 500;
-}
-footer.style-2 .footer-top .footer-item.our-address .footer-inner .footer-content .content ul.social-icons li a {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-}
-footer.style-2 .footer-top .footer-item.twitter-post .footer-inner .footer-content .content ul li i {
-  font-size: 1.5rem;
-  -webkit-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  transform: translateY(10px);
-}
-footer.style-2 .footer-top .footer-item.twitter-post .footer-inner .footer-content .content ul li p {
-  width: calc(100% - 35px);
-  font-size: 1rem;
-}
-footer.style-2 .footer-top.dark-view * {
-  color: #fff !important;
-}
-.footer-top .footer-item {
-  margin: 15px 0;
-}
-@media (min-width: 992px) {
-  .footer-top .footer-item {
-    margin: 0;
-  }
-}
-.footer-top .footer-item .footer-inner .footer-content .title {
-  margin-top: -8px;
-}
-.footer-top .footer-item .footer-inner .footer-content .title h4::after {
-  width: 50px;
-  height: 2px;
-  bottom: -15px;
-  left: 0;
-}
-.footer-top .footer-item .footer-inner .footer-content .content ul li {
-  padding: 8px 0;
-}
-.footer-top .footer-item.our-address .footer-inner .footer-content .content ul li i {
-  margin-top: 10px;
-}
-.footer-bottom {
-  padding: 35px 0;
-  background: #fff;
-}
-.footer-bottom .section-wrapper p {
-  text-align: center;
-  margin-bottom: 0;
-}
-.footer-bottom .section-wrapper p a {
-  padding: 5px;
-  font-weight: 600;
-}
-.footer-bottom .section-wrapper p a:hover {
-  color: #f16126;
-}
 
-.news-footer-wrap {
-  background: #1f1f33;
-}
-@media (max-width: 1439px) {
-  .news-footer-wrap .fs-shape {
-    display: none;
-  }
-}
-.news-footer-wrap .fs-shape img.fst-1 {
-  top: 0;
-  left: -60px;
-}
-.news-footer-wrap .fs-shape img.fst-2 {
-  bottom: 104px;
-  right: 0;
-}
 
-/* @@@@@@@@@@@@@  Newsletter Section Start Here  @@@@@@@@@@@@@@ */
-.news-letter {
-  padding: 60px 0;
-}
-.news-letter .section-wrapper {
-  border-bottom: 1px solid #363648;
-  padding-bottom: 40px;
-  z-index: 1;
-}
-@media (min-width: 992px) {
-  .news-letter .section-wrapper {
-    margin-bottom: 40px;
-    padding-bottom: 60px;
-  }
-}
-@media (min-width: 1200px) {
-  .news-letter .section-wrapper {
-    justify-content: space-between;
-    text-align: left;
-  }
-}
-.news-letter .section-wrapper .news-title {
-  margin-bottom: 30px;
-}
-@media (min-width: 1200px) {
-  .news-letter .section-wrapper .news-title {
-    width: 40%;
-    margin-bottom: 0;
-  }
-}
-.news-letter .section-wrapper .news-form {
-  width: 100%;
-}
-@media (min-width: 1200px) {
-  .news-letter .section-wrapper .news-form {
-    width: calc(100% - 50%);
-  }
-}
-@media (min-width: 576px) {
-  .news-letter .section-wrapper .news-form form .nf-list {
-    background: #fff;
-  }
-}
-.news-letter .section-wrapper .news-form form .nf-list::after {
-  content: "";
-  width: 30px;
-  height: 30px;
-  top: 18px;
-  left: 10px;
-  font-size: 1.5rem;
-  font-family: IcoFont !important;
-}
-@media (min-width: 576px) {
-  .news-letter .section-wrapper .news-form form .nf-list::after {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
-.news-letter .section-wrapper .news-form form .nf-list input {
-  box-shadow: none;
-  border: none;
-  outline: none;
-}
-.news-letter .section-wrapper .news-form form .nf-list input[type=email] {
-  padding: 20px;
-  padding-left: 50px;
-  width: 100%;
-}
-@media (min-width: 576px) {
-  .news-letter .section-wrapper .news-form form .nf-list input[type=email] {
-    padding-right: 170px;
-  }
-}
-@media (min-width: 1200px) {
-  .news-letter .section-wrapper .news-form form .nf-list input[type=email] {
-    width: auto;
-  }
-}
-.news-letter .section-wrapper .news-form form .nf-list input[type=submit] {
-  width: 200px;
-  font-size: 1rem;
-  font-weight: 700;
-  width: 162px;
-  height: 54px;
-  border: none;
-  outline: none;
-  margin-top: 20px;
-}
-@media (min-width: 576px) {
-  .news-letter .section-wrapper .news-form form .nf-list input[type=submit] {
-    position: absolute;
-    top: 50%;
-    right: 5px;
-    transform: translateY(-50%);
-    margin-top: 0;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */
