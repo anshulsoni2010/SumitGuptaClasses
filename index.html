@@ -14,6 +14,11 @@
     <meta name="description"
         content="Sumit Gupta Classes is a leading coaching institute in Jaipur, India, offering exceptional mathematics education. Established in 2012, we have expanded globally with branches in Dubai, USA, UK, Saudi Arabia, and more. With a team of expert teachers and personalized attention, we cater to school and college students. Our founder, Sumit Gupta, has 12+ years of experience and a mastery of math. We provide classroom and online coaching, as well as home tuition. Join us to excel in math and build a strong foundation for success.">
 
+    <!-- aos library for scroll effects  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
     <!-- 
         - favicon
       -->
@@ -55,8 +60,8 @@
         - #HEADER
       -->
 
-    <header class="header" data-header>
-        <div class="container">
+    <header class="header" data-header > 
+        <div class="container" data-aos="flip-down">
 
             <a href="#" class="logo">
                 <img src="./assets/logo/SumitGuptaClasses-nav.png" width="162" height="50" alt="Sumit Gupta Logo">
@@ -145,24 +150,26 @@
 
                     <div class="hero-content">
 
-                        <h2 class="h1 section-title">
+                        <h2 class="h1 section-title" data-aos="zoom-out-right">
                             Unlock Your Full <span class="span">Mathematical Potential</span> and Excel in Numbers
                         </h2>
 
-                        <p class="hero-text">
-                            ❝Empowering Students to Excel in Mathematics: Building Strong Foundations, Developing
-                            Critical Thinking, and Achieving Success❞
-                        </p>
+                        <div data-aos="zoom-out-left">
 
-                        <a href="#" class="btn has-before">
-                            <span class="span">Discover More</span>
+                            <p class="hero-text">
+                                ❝Empowering Students to Excel in Mathematics: Building Strong Foundations, Developing
+                                Critical Thinking, and Achieving Success❞
+                            </p>
 
-                            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                        </a>
+                            <a href="#" class="btn has-before">
+                                <span class="span">Discover More</span>
 
+                                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                            </a>
+                        </div>
                     </div>
 
-                    <figure class="hero-banner">
+                    <figure class="hero-banner" data-aos="fade-down">
 
                         <div class="img-holder one" style="--width: 270; --height: 300;">
                             <img src="./assets/images/hero-banner-1.jpg" width="270" height="300" alt="hero banner"
@@ -184,13 +191,13 @@
 
                 </div>
             </section>
-          
+
 
             <!-- 
             - #CATEGORY
           -->
 
-            <section class="section category" aria-label="category">
+            <section class="section category" aria-label="category" data-aos="fade-down">
                 <div class="container">
 
                     <p class="section-subtitle">Categories</p>
@@ -203,14 +210,14 @@
                         ❝Explore the World of Mathematics: Find Your Path to Numerical Excellence with our Diverse
                         Course Categories❞ </p>
 
-                    <ul class="grid-list">
+                    <ul class="grid-list" data-aos="flip-up" data-aos-delay="300"
+                    ">
 
                         <li>
                             <div class="category-card" style="--color: 170, 75%, 41%">
 
                                 <div class="card-icon">
-                                    <i class="fa-solid fa-graduation-cap category-icon"
-                                        style="color: #1ab79d"></i>
+                                    <i class="fa-solid fa-graduation-cap category-icon" style="color: #1ab79d"></i>
                                 </div>
 
                                 <h3 class="h3">
@@ -225,13 +232,12 @@
 
                             </div>
                         </li>
-                        
+
                         <li>
                             <div class="category-card" style="--color: 351, 83%, 61%">
 
                                 <div class="card-icon">
-                                    <i class="fa-solid fa-university category-icon"
-                                    style="color: #ee4962"></i>
+                                    <i class="fa-solid fa-university category-icon" style="color: #ee4962"></i>
                                 </div>
 
                                 <h3 class="h3">
@@ -271,8 +277,7 @@
                             <div class="category-card" style="--color: 42, 94%, 55%">
 
                                 <div class="card-icon">
-                                    <i class="fa-solid fa-calculator category-icon"
-                                    style="color: #f8b720"></i>
+                                    <i class="fa-solid fa-calculator category-icon" style="color: #f8b720"></i>
                                 </div>
 
                                 <h3 class="h3">
@@ -301,10 +306,10 @@
             - #ABOUT
           -->
 
-            <section class="section about" id="about" aria-label="about">
+            <section class="section about" id="about" aria-label="about"  data-aos="fade-down">
                 <div class="container">
 
-                    <figure class="about-banner">
+                    <figure class="about-banner" data-aos="fade-down-right">
 
                         <div class="img-holder" style="--width: 520; --height: 370;">
                             <img src="./assets/images/about-banner.jpg" width="520" height="370" loading="lazy"
@@ -322,7 +327,7 @@
 
                     </figure>
 
-                    <div class="about-content">
+                    <div class="about-content" data-aos="fade-down-left">
 
                         <p class="section-subtitle">About Us</p>
 
@@ -330,7 +335,12 @@
                             Over a Decade <span class="span">Empowering</span> Students in Mathematics</h2>
 
                         <p class="section-text">
-                            Sumit Gupta Classes is a leading coaching institute in Jaipur, India, offering exceptional mathematics education. Established in 2012, we have expanded globally with branches in Dubai, USA, UK, Saudi Arabia, and more. With a team of expert teachers and personalized attention, we cater to school and college students. Our founder, Sumit Gupta, has 12+ years of experience and a mastery of math. We provide classroom and online coaching, as well as home tuition. Join us to excel in math and build a strong foundation for success.
+                            Sumit Gupta Classes is a leading coaching institute in Jaipur, India, offering exceptional
+                            mathematics education. Established in 2012, we have expanded globally with branches in
+                            Dubai, USA, UK, Saudi Arabia, and more. With a team of expert teachers and personalized
+                            attention, we cater to school and college students. Our founder, Sumit Gupta, has 12+ years
+                            of experience and a mastery of math. We provide classroom and online coaching, as well as
+                            home tuition. Join us to excel in math and build a strong foundation for success.
                         </p>
 
                         <ul class="about-list">
@@ -371,7 +381,7 @@
             - #COURSE
           -->
 
-            <section class="section course" id="courses" aria-label="course">
+            <section class="section course" id="courses" aria-label="course" data-aos="zoom-in-down">
                 <div class="container">
 
                     <p class="section-subtitle">Popular Courses</p>
@@ -380,11 +390,12 @@
 
                     <ul class="grid-list">
 
-                        <li>
+                        <li data-aos="flip-left">
                             <div class="course-card">
 
                                 <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
-                                    <img src="./assets/courses-img/Maths-All Grades 1-12.png" style="background-color: #4461e444;" width="370" height="220" loading="lazy"
+                                    <img src="./assets/courses-img/Maths-All Grades 1-12.png"
+                                        style="background-color: #4461e444;" width="370" height="220" loading="lazy"
                                         alt="Maths - All Grades 1-12 (School Level Courses)" class="img-cover">
                                 </figure>
 
@@ -399,9 +410,12 @@
                                     <span class="badge">Beginner</span>
 
                                     <h3 class="h3">
-                                        <a href="#" class="card-title">Maths - All Grades 1-12 (School Level Courses)</a>
+                                        <a href="#" class="card-title">Maths - All Grades 1-12 (School Level
+                                            Courses)</a>
                                     </h3>
-                                    <h5>This comprehensive course covers mathematics for all grades from 1 to 12, catering to students seeking to enhance their mathematical skills and knowledge at the school level.</h5>
+                                    <h5>This comprehensive course covers mathematics for all grades from 1 to 12,
+                                        catering to students seeking to enhance their mathematical skills and knowledge
+                                        at the school level.</h5>
 
                                     <div class="wrapper">
 
@@ -417,7 +431,7 @@
 
                                     </div>
 
-                                    <button class="explore-prices"  role="button">View Pricing  </button>
+                                    <button class="explore-prices" role="button">View Pricing </button>
 
                                     <ul class="card-meta-list">
 
@@ -440,12 +454,14 @@
                             </div>
                         </li>
 
-                        <li>
+                        <li data-aos="flip-right"> 
                             <div class="course-card">
 
                                 <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
-                                    <img src="./assets/courses-img/SAT-1 Math Preparation.png" style="background-color: #1bdede44;"  width="370" height="220" loading="lazy"
-                                        alt="JSAT-1 Math Preparation (Higher Education and Entrance Exams)" class="img-cover">
+                                    <img src="./assets/courses-img/SAT-1 Math Preparation.png"
+                                        style="background-color: #1bdede44;" width="370" height="220" loading="lazy"
+                                        alt="JSAT-1 Math Preparation (Higher Education and Entrance Exams)"
+                                        class="img-cover">
                                 </figure>
 
                                 <div class="abs-badge">
@@ -459,9 +475,12 @@
                                     <span class="badge">Advanced</span>
 
                                     <h3 class="h3">
-                                        <a href="#" class="card-title">SAT-1 Math Preparation (Higher Education and Entrance Exams)</a>
+                                        <a href="#" class="card-title">SAT-1 Math Preparation (Higher Education and
+                                            Entrance Exams)</a>
                                     </h3>
-                                    <h5>This course is typically categorized as intermediate to advanced level. It focuses on preparing students for the math section of the SAT exam, which includes more advanced math concepts and problem-solving skills.
+                                    <h5>This course is typically categorized as intermediate to advanced level. It
+                                        focuses on preparing students for the math section of the SAT exam, which
+                                        includes more advanced math concepts and problem-solving skills.
                                     </h5>
                                     <div class="wrapper">
 
@@ -477,7 +496,7 @@
 
                                     </div>
 
-                                    <button class="explore-prices"  role="button">View Pricing  </button>
+                                    <button class="explore-prices" role="button">View Pricing </button>
 
                                     <ul class="card-meta-list">
 
@@ -485,7 +504,7 @@
                                             <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
 
                                             <span class="span">15-30
-                                                 Lessons</span>
+                                                Lessons</span>
                                         </li>
 
                                         <li class="card-meta-item">
@@ -501,11 +520,12 @@
                             </div>
                         </li>
 
-                        <li>
+                        <li data-aos="flip-left">
                             <div class="course-card">
 
                                 <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
-                                    <img src="./assets/courses-img/Discrete Mathematics.png" style="background-color:#ff560244" width="370" height="220" loading="lazy"
+                                    <img src="./assets/courses-img/Discrete Mathematics.png"
+                                        style="background-color:#ff560244" width="370" height="220" loading="lazy"
                                         alt="Discrete Mathematics (Advanced Mathematics)" class="img-cover">
                                 </figure>
 
@@ -522,7 +542,9 @@
                                     <h3 class="h3">
                                         <a href="#" class="card-title">Discrete Mathematics (Advanced Mathematics)</a>
                                     </h3>
-                                    <h5>This course delves into the study of discrete mathematical structures and concepts, attracting students interested in computer science, cryptography, and other fields that rely on discrete mathematics.</h5>
+                                    <h5>This course delves into the study of discrete mathematical structures and
+                                        concepts, attracting students interested in computer science, cryptography, and
+                                        other fields that rely on discrete mathematics.</h5>
 
                                     <div class="wrapper">
 
@@ -538,7 +560,7 @@
 
                                     </div>
 
-                                    <button class="explore-prices"  role="button">View Pricing  </button>
+                                    <button class="explore-prices" role="button">View Pricing </button>
 
                                     <ul class="card-meta-list">
 
@@ -588,7 +610,7 @@
                         <div class="video-banner img-holder has-after" style="--width: ; --height: ;">
                             <img src="./assets/memories/memory-gallery.gif" width="970" height="550" loading="lazy"
                                 alt="video banner" class="img-cover">
-<!-- 
+                            <!-- 
                                 <button class="play-btn" aria-label="play video">
                                     <ion-icon name="play" aria-hidden="true"></ion-icon>
                                 </button> -->
@@ -659,7 +681,7 @@
 
 
 
-         
+
 
         </article>
     </main>
@@ -672,7 +694,7 @@
         - #FOOTER
       -->
 
-      <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+    <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
 
         <div class="footer-top section">
             <div class="container grid-list">
@@ -680,11 +702,14 @@
                 <div class="footer-brand">
 
                     <a href="#" class="logo">
-                        <img src="./assets/logo/SumitGuptaClasses-nav.png" style="background-color: #1ab79d; border-radius:25px;" width="162" height="50" alt="Sumit Gupta Logo">
+                        <img src="./assets/logo/SumitGuptaClasses-nav.png"
+                            style="background-color: #1ab79d; border-radius:25px;" width="162" height="50"
+                            alt="Sumit Gupta Logo">
                     </a>
 
                     <p class="footer-brand-text">
-                        Unlock your mathematical potential with Sumit Gupta Classes - Your trusted partner in mathematical excellence.
+                        Unlock your mathematical potential with Sumit Gupta Classes - Your trusted partner in
+                        mathematical excellence.
                     </p>
 
                     <div class="wrapper">
@@ -696,12 +721,13 @@
                     <div class="wrapper">
                         <span class="span">Email:</span>
 
-                        <a href="mailto:sumitguptaclasses.2012@gmail.com" class="footer-link">sumitguptaclasses.2012@gmail.com</a>
+                        <a href="mailto:sumitguptaclasses.2012@gmail.com"
+                            class="footer-link">sumitguptaclasses.2012@gmail.com</a>
                     </div>
 
                 </div>
 
-               
+
 
                 <ul class="footer-list">
 
@@ -725,7 +751,7 @@
                         <a href="#" class="footer-link">Admissions</a>
                     </li>
 
-                   
+
                     <li>
                         <a href="./contact.html" class="footer-link">Contact Us</a>
                     </li>
@@ -812,7 +838,7 @@
 
                 </div>
 
-              
+
             </div>
         </div>
 
@@ -822,7 +848,8 @@
                 <p class="copyright">
                     Copyright 2023 All Rights Reserved by <a href="#" class="copyright-link">Sumit Gupta Classes</a>
                     <br>
-                    <b>Designed & Developed By <a href="https://anshulsoni.tech" class="copyright-link">Anshul Soni</a></b>
+                    <b>Designed & Developed By <a href="https://anshulsoni.tech" class="copyright-link">Anshul
+                            Soni</a></b>
                 </p>
 
             </div>
@@ -845,6 +872,11 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <script src="./assets/js/index.js"></script>
+
+    <!-- initalizing aos library dependencies -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
