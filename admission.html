@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Admission Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css">
+    <style>
+        body {
+            font-family: arial;
+            transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+            background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zMDktYWRqLTA0XzIuanBn.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .container {
+            padding: 40px;
+            width: 500px;
+            margin: 20px auto;
+            background-color: #f1f1f1;
+        }
+
+        .container h2 {
+            text-align: center;
+        }
+
+        fieldset {
+            border: 1px solid #d4d4d4;
+            padding: 20px 10px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .input-field {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        label {
+            margin-right: 25px;
+            margin-top: 5px;
+            width: 30%;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .icon {
+            background: #fcfcfa;
+            color: black;
+            min-width: 40px;
+            border: 2px solid #e2e2e2;
+            border-right: none;
+            text-align: center;
+            padding: 7px;
+        }
+
+        .inputs {
+            padding: 3px 10px;
+            border: 2px solid #e2e2e2;
+            width: 70%;
+        }
+
+        input[type="radio"] {
+            margin-right: 8px;
+        }
+
+        .textarea {
+            padding: 8px;
+            border: 2px solid #e2e2e2;
+        }
+
+        .textarea-icon {
+            padding-top: 14px;
+        }
+
+        .button {
+            text-align: center;
+        }
+
+        .submit {
+            color: white;
+            background: #ee9a25;
+            padding: 9px 25px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #c9c9c9;
+        }
+
+        .submit:hover {
+            background: #d1871e;
+        }
+
+        .reset {
+            color: white;
+            background: #c93232;
+            padding: 9px 25px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #c9c9c9;
+        }
+
+        .reset:hover {
+            background: #a32727;
+        }
+
+        .city {
+            margin-left: -6px;
+        }
+
+        .gender {
+            margin-left: -30px;
+        }
+
+        .courses {
+            margin-left: -26px;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .message {
+            margin-left: -30px;
+        }
+
+        /*responsive design for mobile size devices*/
+
+        @media only screen and (max-width: 900px) {
+
+            .container {
+                padding: 10px;
+                width: 100%;
+                margin: auto;
+                background-color: #f1f1f1;
+            }
+
+            .input-field {
+                flex-wrap: wrap;
+            }
+
+            label {
+                width: 100%;
+                text-align: left;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+
+            .inputs,
+            select,
+            textarea {
+                width: 100%;
+            }
+
+            .button {
+                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .submit,
+            .reset {
+                width: 100%;
+                margin-top: 10px;
+                margin-right: 0;
+            }
+
+            .textarea-icon {
+                padding-top: 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Admission Form</h2>
+        <form action="">
+            <fieldset>
+                <div class="input-field">
+                    <label for="name">Name</label>
+                    <i class="fa fa-user icon"></i>
+                    <input type="text" class="inputs" name="usrname" id="name">
+                </div>
+                <div class="input-field">
+                    <label for="fatherName">Father's name</label>
+                    <i class="fa-solid fa-people-roof icon"></i>
+                    <input type="text" class="inputs" name="fatherName" id="fatherName">
+                </div>
+
+                <div class="input-field">
+                    <label for="email">Email</label>
+                    <i class="fa fa-envelope icon"></i>
+                    <input type="email" class="inputs" id="email">
+                </div>
+                <div class="input-field">
+                    <label for="phone">Phone No</label>
+                    <i class="fa fa-phone icon"></i>
+                    <input type="number" class="inputs" id="phone">
+                </div>
+                <div class="input-field">
+                    <label class="gender">Gender</label>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other"> Other
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="input-field">
+                    <label class="message">Address</label>
+                    <i class="fa-solid fa-address-book icon textarea-icon"></i>
+                    <textarea class="textarea"></textarea>
+                </div>
+                <div class="input-field">
+                    <label class="country">Country</label>
+                    <i class="fa fa-list icon"></i>
+                    <select name="country" id="country" class="inputs">
+                        <option value="0">Select Country</option>
+                        <!-- Country options... -->
+                    </select>
+                </div>
+                <div class="input-field">
+                    <label for="zipCode">Zip code</label>
+                    <i class="fa fa-home icon"></i>
+                    <input type="number" class="inputs" id="zipCode">
+                </div>
+                <div class="input-field">
+                    <label>Upload ID <span style="font-size: small;">(any)</span></label>
+                    <i class="fa fa-upload icon"></i>
+                    <input type="file" class="inputs" id="uploadId">
+                </div>
+                <center style="margin-top: 10%;"><b>Note- After submitting the form, expect an email within a few hours.
+                        It will include a complete list of courses not available on the website, along with their
+                        pricing information.</b></center>
+            </fieldset>
+
+            <div class="button">
+                <button type="submit" class="submit">Submit</button>
+                <button type="reset" class="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
