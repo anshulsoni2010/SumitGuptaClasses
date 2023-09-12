@@ -1650,3 +1650,17 @@ margin: 14% auto;
     }
 
 }
+
+
+/* @media (max-width: 600px) {
+    #* Reset margins and padding for #hero to ensure it fits within the viewport *#
+    .hero {
+      margin: 0;
+      padding: 0;
+    }
+    
+    #* Ensure that #hero and its children don't exceed the viewport width *#
+    .hero, .hero * {
+      max-width: 100%;
+    }
+} */
